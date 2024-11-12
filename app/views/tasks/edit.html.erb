@@ -1,0 +1,11 @@
+<!-- app/views/tasks/new.html.erb -->
+
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Edit", tasks_path %>
